@@ -1,0 +1,9 @@
+Konfigurasi VTP (VLAN Trunking Protocol) digunakan untuk menyinkronkan database VLAN di beberapa switch dalam satu domain.
+Ini menyederhanakan manajemen jaringan karena kamu tidak perlu membuat VLAN secara manual di setiap switch.
+
+Mode VTP :
+1. Server: Mode default. Di mode ini, kamu bisa membuat, menghapus, atau memodifikasi VLAN. 
+   Perubahan ini akan disinkronkan ke switch lain dalam domain yang sama.
+2. Client: Tidak bisa membuat, menghapus, atau memodifikasi VLAN. Switch ini hanya menerima pembaruan dari VTP server.
+3. Transparent: Tidak berpartisipasi dalam VTP domain.
+   Switch ini tidak menerima atau mengirim pembaruan VTP, tetapi akan meneruskan pesan VTP dari switch lain.
